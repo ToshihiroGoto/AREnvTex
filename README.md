@@ -1,9 +1,3 @@
-# ARKit - AR / VR 空間をスイッチさせるサンプル
+# ARKit 2 - AREnvironmentProbeAnchor
 
-![タップで AR / VR をスイッチ](fig.png)
-
-　
-
-### Demo
-
-[![AR / VR 空間をスイッチさせるサンプル](https://i.vimeocdn.com/video/671786929.jpg)](https://player.vimeo.com/video/246739368)
+[Blog 記事用のサンプル。](http://appleengine.hatenablog.com/entry/2017/11/17/180359)
