@@ -70,12 +70,12 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     
     func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
         for case let envAnchor as AREnvironmentProbeAnchor in anchors {
-            let textureSlice1 = envAnchor.environmentTexture?.makeTextureView(pixelFormat: .rgba8Unorm, textureType: .type2D, levels: 0 ..< 1, slices: 0..<1)
-            let textureSlice2 = envAnchor.environmentTexture?.makeTextureView(pixelFormat: .rgba8Unorm, textureType: .type2D, levels: 0 ..< 1, slices: 1..<2)
-            let textureSlice3 = envAnchor.environmentTexture?.makeTextureView(pixelFormat: .rgba8Unorm, textureType: .type2D, levels: 0 ..< 1, slices: 2..<3)
-            let textureSlice4 = envAnchor.environmentTexture?.makeTextureView(pixelFormat: .rgba8Unorm, textureType: .type2D, levels: 0 ..< 1, slices: 3..<4)
-            let textureSlice5 = envAnchor.environmentTexture?.makeTextureView(pixelFormat: .rgba8Unorm, textureType: .type2D, levels: 0 ..< 1, slices: 4..<5)
-            let textureSlice6 = envAnchor.environmentTexture?.makeTextureView(pixelFormat: .rgba8Unorm, textureType: .type2D, levels: 0 ..< 1, slices: 5..<6)
+            let textureSlice1 = envAnchor.environmentTexture?.makeTextureView(pixelFormat: .bgra8Unorm, textureType: .type2D, levels: 0 ..< 1, slices: 0..<1)
+            let textureSlice2 = envAnchor.environmentTexture?.makeTextureView(pixelFormat: .bgra8Unorm, textureType: .type2D, levels: 0 ..< 1, slices: 1..<2)
+            let textureSlice3 = envAnchor.environmentTexture?.makeTextureView(pixelFormat: .bgra8Unorm, textureType: .type2D, levels: 0 ..< 1, slices: 2..<3)
+            let textureSlice4 = envAnchor.environmentTexture?.makeTextureView(pixelFormat: .bgra8Unorm, textureType: .type2D, levels: 0 ..< 1, slices: 3..<4)
+            let textureSlice5 = envAnchor.environmentTexture?.makeTextureView(pixelFormat: .bgra8Unorm, textureType: .type2D, levels: 0 ..< 1, slices: 4..<5)
+            let textureSlice6 = envAnchor.environmentTexture?.makeTextureView(pixelFormat: .bgra8Unorm, textureType: .type2D, levels: 0 ..< 1, slices: 5..<6)
             
             let ciImage1 = CIImage(mtlTexture: textureSlice1!, options: nil)
             let ciImage2 = CIImage(mtlTexture: textureSlice2!, options: nil)
